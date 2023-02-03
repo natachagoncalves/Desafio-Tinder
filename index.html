@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+		<title>Desafio Tinder</title>
+	</head>
+	<body>
+		<div id="cardArea" class="card-area"></div>
+
+        <template id="cardTemplate">
+            <div class="card">
+                <img src="" class="user-picture">
+                <h2 class="user-info"></h2>
+                <div class="card-button-wrapper">
+                    <button class="card-button card-button-dislike" onclick="dislike()" >x</button>
+                    <button class="card-button card-button-like" onclick="like()">✓</button>
+                </div>
+            </div>
+        </template>
+
+		<script src="main.js"></script>
+	</body>
+</html>

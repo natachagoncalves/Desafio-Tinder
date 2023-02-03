@@ -1,0 +1,80 @@
+body {
+	background-image: linear-gradient(#F25C69, #F2507B, #D9488B,#F27244, #F26052);
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+}
+
+.title {
+	text-align: center;
+}
+
+.card-area {
+	height: 600px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	height: 320px;
+	border: solid 1px #ddd;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #fff;
+	position: absolute;
+	transition: margin .5s, opacity .3s, transform .5s;
+    box-shadow: 1px 1px 10px 1px rgba(105, 105, 105, 0.137);
+}
+
+.card-dislike {
+	margin-left: -1000px;
+	opacity: 0;
+	transform: rotate(-30deg);
+}
+
+.card-like {
+	margin-right: -1000px;
+	opacity: 0;
+	transform: rotate(30deg);
+}
+
+.user-picture {
+	width: 200px;
+	border-radius: 5px;
+}
+
+.user-info {
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.card-button-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: auto;
+}
+
+.card-button {
+	border: none;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	font-size: 32px;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: 1px 1px 3px 1px rgba(56, 56, 56, 0.575);
+}
+
+.card-button-dislike {
+	background-color: #d44;
+}
+
+.card-button-like {
+	background-color: #3c4;
+}
